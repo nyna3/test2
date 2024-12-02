@@ -62,7 +62,6 @@ public class Form_Event extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         noticeBoard = new com.raven.swing.noticeboard.NoticeBoard();
         border3 = new com.raven.swing.Border();
-        borderB2 = new com.raven.swing.BorderB();
         jLabel7 = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
@@ -123,7 +122,7 @@ public class Form_Event extends javax.swing.JPanel {
         borderB1.setLayout(borderB1Layout);
         borderB1Layout.setHorizontalGroup(
             borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 631, Short.MAX_VALUE)
+            .addGap(0, 552, Short.MAX_VALUE)
             .addGroup(borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(borderB1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -157,20 +156,9 @@ public class Form_Event extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout borderB2Layout = new javax.swing.GroupLayout(borderB2);
-        borderB2.setLayout(borderB2Layout);
-        borderB2Layout.setHorizontalGroup(
-            borderB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 424, Short.MAX_VALUE)
-        );
-        borderB2Layout.setVerticalGroup(
-            borderB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
-        );
-
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Alertas");
+        jLabel7.setText("Perfil do Cliente");
         jLabel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
         javax.swing.GroupLayout border3Layout = new javax.swing.GroupLayout(border3);
@@ -178,23 +166,16 @@ public class Form_Event extends javax.swing.JPanel {
         border3Layout.setHorizontalGroup(
             border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(border3Layout.createSequentialGroup()
-                .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(border3Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(borderB2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(border3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel7)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel7)
+                .addContainerGap(385, Short.MAX_VALUE))
         );
         border3Layout.setVerticalGroup(
             border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(borderB2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(16, 16, 16))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -230,7 +211,6 @@ public class Form_Event extends javax.swing.JPanel {
     private com.raven.swing.Border border1;
     private com.raven.swing.Border border3;
     private com.raven.swing.BorderB borderB1;
-    private com.raven.swing.BorderB borderB2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
