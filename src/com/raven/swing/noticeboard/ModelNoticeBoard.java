@@ -11,7 +11,7 @@ public class ModelNoticeBoard {
     public void setTitleColor(Color titleColor) {
         this.titleColor = titleColor;
     }
-    
+        
     public String getServ() {
         return serv;
     }

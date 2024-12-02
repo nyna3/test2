@@ -30,17 +30,17 @@ public class Form_Event extends javax.swing.JPanel {
 
     private void initNoticeBoard() {
         noticeBoard.addDate("16/05/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "", "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "Tipo de evento:", "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
         noticeBoard.addDate("25/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "", "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238),"", "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "", "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43),"", "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "", "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215),"", "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "", "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204),"", "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "", "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57),"", "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.scrollToTop();
     }
 
@@ -61,6 +61,7 @@ public class Form_Event extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         noticeBoard = new com.raven.swing.noticeboard.NoticeBoard();
+        jLabel14 = new javax.swing.JLabel();
         border3 = new com.raven.swing.Border();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -91,20 +92,30 @@ public class Form_Event extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setOpaque(false);
 
+        jLabel14.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel14.setText("Data do evento:");
+        jLabel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 733, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addGap(0, 632, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -117,7 +128,7 @@ public class Form_Event extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel5)
-                        .addGap(0, 506, Short.MAX_VALUE))
+                        .addGap(0, 644, Short.MAX_VALUE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -325,7 +336,7 @@ public class Form_Event extends javax.swing.JPanel {
                 .addComponent(borderBC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(borderBC3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -352,7 +363,7 @@ public class Form_Event extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(border3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(border1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -368,6 +379,7 @@ public class Form_Event extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
