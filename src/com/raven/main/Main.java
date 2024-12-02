@@ -5,7 +5,7 @@ import com.raven.component.Menu;
 import com.raven.event.EventMenuSelected;
 import com.raven.event.EventShowPopupMenu;
 import com.raven.form.Form_Agenda;
-import com.raven.form.Form_Evento;
+import com.raven.form.Form_Event;
 import com.raven.form.Form_Home;
 import com.raven.form.Form_Orcamento;
 import com.raven.form.MainForm;
@@ -61,7 +61,7 @@ public class Main extends javax.swing.JFrame {
                     main.showForm(new Form_Orcamento());
                 }else if (menuIndex == 3) {
             
-                    main.showForm(new Form_Evento());
+                    main.showForm(new Form_Event());
                 }
             }
         });

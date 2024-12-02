@@ -15,56 +15,34 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Form_Evento extends javax.swing.JPanel {
+public class Form_Event extends javax.swing.JPanel {
 
-    public Form_Evento() {
+    public Form_Event() {
         initComponents();
-        table1.fixTable(jScrollPane1);
         setOpaque(false);
         initData();
     }
 
     private void initData() {
-        initTableData();
-    }
-
-    private void initTableData() {
-        EventAction eventAction = new EventAction() {
-            @Override
-            public void delete(ModelStudent student) {
-                if (showMessage("Delete Student : " + student.getName())) {
-                    System.out.println("User click OK");
-                } else {
-                    System.out.println("User click Cancel");
-                }
-            }
-
-            @Override
-            public void update(ModelStudent student) {
-                if (showMessage("Update Student : " + student.getName())) {
-                    System.out.println("User click OK");
-                } else {
-                    System.out.println("User click Cancel");
-                }
-            }
-        };
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile1.png")), "Eduarda", "0001", "Aniversário", "16/05/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile.jpg")), "Pedro", "0002", "Bodas", "25/06/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile6.jpg")), "Karina", "0003", "Casamento", "30/06/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile3.jpg")), "Jorge", "0004", "Jantar", "05/07/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile4.jpg")), "Fernando", "0005", "Desp solteiro", "24/07/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile5.jpg")), "Natan", "0006", "Aniversário", "30/07/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile7.jpg")), "Carolina", "0007", "Jantar", "18/08/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile8.jpg")), "Roberta", "0008", "Almoço", "14/09/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile2.jpg")), "Bora", "0009", "Casamento", "14/09/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile2.jpg")), "Bora", "0010", "Almoço", "14/09/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile2.jpg")), "Bora", "0011", "Cha revelação", "14/09/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile2.jpg")), "Bora", "0012", "Bodas", "14/09/25").toRowTable(eventAction));
-        table1.addRow(new ModelStudent(new ImageIcon(getClass().getResource("/com/raven/icon/profile2.jpg")), "Bora", "0013", "Aniversário", "14/09/25").toRowTable(eventAction));
+        initNoticeBoard();
     }
 
 
-
+    private void initNoticeBoard() {
+        noticeBoard.addDate("16/05/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
+        noticeBoard.addDate("25/06/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
+        noticeBoard.addDate("30/06/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
+        noticeBoard.addDate("30/06/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addDate("30/06/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addDate("30/06/2025");
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.scrollToTop();
+    }
 
     private boolean showMessage(String message) {
         Message obj = new Message(Main.getFrames()[0], true);
@@ -80,40 +58,43 @@ public class Form_Evento extends javax.swing.JPanel {
         border1 = new com.raven.swing.Border();
         borderB1 = new com.raven.swing.BorderB();
         jPanel2 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        table1 = new com.raven.swing.table.Table();
         jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        noticeBoard = new com.raven.swing.noticeboard.NoticeBoard();
         border3 = new com.raven.swing.Border();
         borderB2 = new com.raven.swing.BorderB();
         jLabel7 = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Perfil do Cliente");
+        jLabel1.setText("Detalhes do evento");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setOpaque(false);
 
-        table1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+        jLabel5.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel5.setText("Descrição");
+        jLabel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
-            },
-            new String [] {
-                "Nome", "OS", "Evento", "Data", "Opções"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, true
-            };
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setOpaque(false);
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane1.setViewportView(table1);
-        if (table1.getColumnModel().getColumnCount() > 0) {
-            table1.getColumnModel().getColumn(0).setPreferredWidth(150);
-        }
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -121,29 +102,28 @@ public class Form_Evento extends javax.swing.JPanel {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 607, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(0, 506, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
-                .addGap(40, 40, 40))
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(4, 4, 4))
         );
-
-        jLabel5.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel5.setText("Clientes");
-        jLabel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
         javax.swing.GroupLayout borderB1Layout = new javax.swing.GroupLayout(borderB1);
         borderB1.setLayout(borderB1Layout);
         borderB1Layout.setHorizontalGroup(
             borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(borderB1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel5)
-                .addContainerGap(531, Short.MAX_VALUE))
+            .addGap(0, 631, Short.MAX_VALUE)
             .addGroup(borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(borderB1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -152,14 +132,11 @@ public class Form_Evento extends javax.swing.JPanel {
         );
         borderB1Layout.setVerticalGroup(
             borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(borderB1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel5)
-                .addContainerGap(603, Short.MAX_VALUE))
+            .addGap(0, 652, Short.MAX_VALUE)
             .addGroup(borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, borderB1Layout.createSequentialGroup()
-                    .addContainerGap(50, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
         );
 
@@ -167,21 +144,17 @@ public class Form_Evento extends javax.swing.JPanel {
         border1.setLayout(border1Layout);
         border1Layout.setHorizontalGroup(
             border1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 643, Short.MAX_VALUE)
-            .addGroup(border1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(border1Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(borderB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addGroup(border1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(borderB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         border1Layout.setVerticalGroup(
             border1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(border1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(border1Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(borderB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addGroup(border1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(borderB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout borderB2Layout = new javax.swing.GroupLayout(borderB2);
@@ -192,7 +165,7 @@ public class Form_Evento extends javax.swing.JPanel {
         );
         borderB2Layout.setVerticalGroup(
             borderB2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGap(0, 604, Short.MAX_VALUE)
         );
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
@@ -243,9 +216,9 @@ public class Form_Evento extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(border3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(border1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -261,8 +234,8 @@ public class Form_Evento extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private com.raven.swing.table.Table table1;
+    private com.raven.swing.noticeboard.NoticeBoard noticeBoard;
     // End of variables declaration//GEN-END:variables
 }
