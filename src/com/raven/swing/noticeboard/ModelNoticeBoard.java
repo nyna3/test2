@@ -11,6 +11,14 @@ public class ModelNoticeBoard {
     public void setTitleColor(Color titleColor) {
         this.titleColor = titleColor;
     }
+    
+    public String getServ() {
+        return serv;
+    }
+
+    public void setServ(String serv) {
+        this.serv = serv;
+    }
 
     public String getTitle() {
         return title;
@@ -36,8 +44,9 @@ public class ModelNoticeBoard {
         this.description = description;
     }
 
-    public ModelNoticeBoard(Color titleColor, String title, String time, String description) {
+    public ModelNoticeBoard(Color titleColor, String serv, String title, String time, String description) {
         this.titleColor = titleColor;
+        this.serv = serv;
         this.title = title;
         this.time = time;
         this.description = description;
@@ -47,6 +56,7 @@ public class ModelNoticeBoard {
     }
 
     private Color titleColor;
+    private String serv;
     private String title;
     private String time;
     private String description;

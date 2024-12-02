@@ -30,17 +30,17 @@ public class Form_Event extends javax.swing.JPanel {
 
     private void initNoticeBoard() {
         noticeBoard.addDate("16/05/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "", "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
         noticeBoard.addDate("25/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "", "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "", "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "", "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "", "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "", "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.scrollToTop();
     }
 
@@ -70,6 +70,12 @@ public class Form_Event extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        borderBC1 = new com.raven.swing.BorderBC();
+        jLabel11 = new javax.swing.JLabel();
+        borderBC2 = new com.raven.swing.BorderBC();
+        jLabel12 = new javax.swing.JLabel();
+        borderBC3 = new com.raven.swing.BorderBC();
+        jLabel13 = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -91,14 +97,14 @@ public class Form_Event extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE)
+                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 733, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(noticeBoard, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -129,7 +135,7 @@ public class Form_Event extends javax.swing.JPanel {
         borderB1.setLayout(borderB1Layout);
         borderB1Layout.setHorizontalGroup(
             borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 769, Short.MAX_VALUE)
             .addGroup(borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(borderB1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -138,7 +144,7 @@ public class Form_Event extends javax.swing.JPanel {
         );
         borderB1Layout.setVerticalGroup(
             borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 654, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(borderB1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, borderB1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -195,6 +201,66 @@ public class Form_Event extends javax.swing.JPanel {
         jLabel10.setText("Observações");
         jLabel10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
+        jLabel11.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jLabel11.setText("Vegana");
+
+        javax.swing.GroupLayout borderBC1Layout = new javax.swing.GroupLayout(borderBC1);
+        borderBC1.setLayout(borderBC1Layout);
+        borderBC1Layout.setHorizontalGroup(
+            borderBC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(borderBC1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel11)
+                .addContainerGap(272, Short.MAX_VALUE))
+        );
+        borderBC1Layout.setVerticalGroup(
+            borderBC1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(borderBC1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel11)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jLabel12.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jLabel12.setText("Intolerante a lactose");
+
+        javax.swing.GroupLayout borderBC2Layout = new javax.swing.GroupLayout(borderBC2);
+        borderBC2.setLayout(borderBC2Layout);
+        borderBC2Layout.setHorizontalGroup(
+            borderBC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(borderBC2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel12)
+                .addContainerGap(192, Short.MAX_VALUE))
+        );
+        borderBC2Layout.setVerticalGroup(
+            borderBC2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(borderBC2Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel12)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jLabel13.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jLabel13.setText("<html>\nGostaria de brigadeiros azuis e castanhas ao <br>\ninvés de granulado\n</html>");
+
+        javax.swing.GroupLayout borderBC3Layout = new javax.swing.GroupLayout(borderBC3);
+        borderBC3.setLayout(borderBC3Layout);
+        borderBC3Layout.setHorizontalGroup(
+            borderBC3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(borderBC3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        borderBC3Layout.setVerticalGroup(
+            borderBC3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, borderBC3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22))
+        );
+
         javax.swing.GroupLayout border3Layout = new javax.swing.GroupLayout(border3);
         border3.setLayout(border3Layout);
         border3Layout.setHorizontalGroup(
@@ -203,14 +269,8 @@ public class Form_Event extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
-                        .addGap(0, 55, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel9)
-                                .addGap(48, 48, 48))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(42, 42, 42))
@@ -220,13 +280,25 @@ public class Form_Event extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6)))
+                                .addComponent(jLabel6))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, border3Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel9)
+                                .addGap(48, 48, 48)))
                         .addGap(42, 42, 42))
                     .addGroup(border3Layout.createSequentialGroup()
                         .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7)
                             .addComponent(jLabel10))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(border3Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(borderBC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(borderBC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(borderBC3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 12, Short.MAX_VALUE))))
         );
         border3Layout.setVerticalGroup(
             border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,9 +317,15 @@ public class Form_Event extends javax.swing.JPanel {
                 .addGroup(border3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(jLabel8))
-                .addGap(38, 38, 38)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(borderBC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(borderBC2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(borderBC3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -274,7 +352,7 @@ public class Form_Event extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(border3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(border1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(157, Short.MAX_VALUE))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -282,8 +360,14 @@ public class Form_Event extends javax.swing.JPanel {
     private com.raven.swing.Border border1;
     private com.raven.swing.Border border3;
     private com.raven.swing.BorderB borderB1;
+    private com.raven.swing.BorderBC borderBC1;
+    private com.raven.swing.BorderBC borderBC2;
+    private com.raven.swing.BorderBC borderBC3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

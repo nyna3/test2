@@ -88,17 +88,17 @@ public class Form_Home extends javax.swing.JPanel {
 
     private void initNoticeBoard() {
         noticeBoard.addDate("16/05/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(218, 49, 238), "", "Festa de Aniversário infantil", "Será daqui há 3 dias", "Ordem de Servoço: 0001\n" + "!Família Vegana!\n" + "!Intolerante a lactose!\n" + "Castanhas trituradas ao invés de granulado nos brigadeiros\n" + "Brigadeiras azuis\n" + "Bolo de referência"));
         noticeBoard.addDate("25/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(94, 49, 238), "", "Bodas", "Distante", "Ordem de Servoço: 0002\n" + "Doces e salgados finos\n" + "Faltam os salgados"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(32, 171, 43), "", "Desp. Solteiro", "Distante", "Ordem de Servoço: 0003\n" + "Doces personalizados\n" + "Faltam ingredientes"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(50, 93, 215), "", "Evento", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(27, 188, 204), "", "Evento ", "Tempo","Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.addDate("30/06/2025");
-        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
+        noticeBoard.addNoticeBoard(new ModelNoticeBoard(new Color(238, 46, 57), "", "Evento", "Tempo", "Ordem de Servoço:\n" + "Descrição"));
         noticeBoard.scrollToTop();
     }
 

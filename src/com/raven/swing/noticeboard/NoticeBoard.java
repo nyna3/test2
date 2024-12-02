@@ -19,10 +19,14 @@ public class NoticeBoard extends javax.swing.JPanel {
     }
 
     public void addNoticeBoard(ModelNoticeBoard data) {
+        JLabel serv = new JLabel(data.getServ());
+        serv.setFont(new Font("sansserif", 1, 12));
+        serv.setForeground(data.getTitleColor());
+        panel.add(serv, "wrap");
         JLabel title = new JLabel(data.getTitle());
         title.setFont(new Font("sansserif", 1, 12));
         title.setForeground(data.getTitleColor());
-        panel.add(title);
+        panel.add(title, "wrap");
         JLabel time = new JLabel(data.getTime());
         time.setForeground(new Color(180, 180, 180));
         panel.add(time, "gap 10, wrap");
