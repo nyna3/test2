@@ -4,31 +4,34 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
+
 public class DescEventoP extends javax.swing.JPanel {
+    
 
     public DescEventoP() {
         initComponents();
         setOpaque(false);
     }
+    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        descEventoP1 = new javax.swing.JTextArea();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setOpaque(false);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Festa de aniversário para o filho Noah, que adora a Patrulha Canina. O evento acontecerá no dia 16/05/2025. \nA família toda é vegana e a mãe intolerante a lactose, além disso não gostam de granulado e preferem castanhas trituradas.\nGostariam que os brigadeiros fossem azuis, pois é a cor favorita de Noah.\nA cliente pediu o bolo da referência que trouxe.\nAs trufas serão de Maracujá, Avelã e Frutas vermelhas.\nSerão 1500 trufas (500 de cada); 500 brigadeiros; 1500 salgados sortidos.");
-        jTextArea1.setBorder(null);
-        jTextArea1.setOpaque(false);
-        jScrollPane1.setViewportView(jTextArea1);
+        descEventoP1.setEditable(false);
+        descEventoP1.setColumns(20);
+        descEventoP1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        descEventoP1.setRows(5);
+        descEventoP1.setText("Festa de aniversário para o filho Noah, que adora a Patrulha Canina. O evento acontecerá no dia 16/05/2025. \nA família toda é vegana e a mãe intolerante a lactose, além disso não gostam de granulado e preferem castanhas trituradas.\nGostariam que os brigadeiros fossem azuis, pois é a cor favorita de Noah.\nA cliente pediu o bolo da referência que trouxe.\nAs trufas serão de Maracujá, Avelã e Frutas vermelhas.\nSerão 1500 trufas (500 de cada); 500 brigadeiros; 1500 salgados sortidos.");
+        descEventoP1.setBorder(null);
+        descEventoP1.setOpaque(false);
+        jScrollPane1.setViewportView(descEventoP1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -53,7 +56,7 @@ public class DescEventoP extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea descEventoP1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

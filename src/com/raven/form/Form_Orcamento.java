@@ -19,6 +19,7 @@ import com.raven.swing.scrollbar.ScrollBarCustom;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 import javax.swing.UIManager;
+import com.raven.swing.ButtonClean;
 
 public class Form_Orcamento extends javax.swing.JPanel {
 
@@ -60,9 +61,23 @@ public class Form_Orcamento extends javax.swing.JPanel {
     }
 
 
+    
     private void initData() {
-        initTableData();
+            buttonClean1.setFields(
+            cliente1,  // Campo Cliente
+            dEvento1,  // Campo Data do Evento
+            lEvento1,      // Campo LEvento (null porque não existe no layout atual)
+            descEvento1,  // Campo Descriçã // Campo DescEventoP (null porque não está presente)
+            nEvento2,  // Campo Nome do Evento
+            tEvento1,  // Campo Tipo do Evento
+            vEvento1,
+            obs11,
+            obs21,
+            obs31// Campo Valor do Evento
+        );
+
     }
+
 
     private void initTableData() {
         EventAction eventAction = new EventAction() {
@@ -128,6 +143,8 @@ public class Form_Orcamento extends javax.swing.JPanel {
         obs21 = new com.raven.component.Obs2();
         jLabel15 = new javax.swing.JLabel();
         obs31 = new com.raven.component.Obs3();
+        buttonClean1 = new com.raven.swing.ButtonClean();
+        buttonAdd1 = new com.raven.swing.ButtonAdd();
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setOpaque(false);
@@ -266,6 +283,12 @@ public class Form_Orcamento extends javax.swing.JPanel {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Observação 3");
 
+        buttonClean1.setForeground(new java.awt.Color(255, 255, 255));
+        buttonClean1.setText("Limpar");
+
+        buttonAdd1.setForeground(new java.awt.Color(255, 255, 255));
+        buttonAdd1.setText("Adicionar orçamento");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -312,6 +335,12 @@ public class Form_Orcamento extends javax.swing.JPanel {
                                     .addComponent(jLabel1))
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(buttonClean1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(buttonAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,7 +387,11 @@ public class Form_Orcamento extends javax.swing.JPanel {
                 .addComponent(jLabel12)
                 .addGap(0, 0, 0)
                 .addComponent(descEvento1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(buttonAdd1, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
+                    .addComponent(buttonClean1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(25, 25, 25))
         );
 
         jScrollPane2.setViewportView(jPanel2);
@@ -398,6 +431,8 @@ public class Form_Orcamento extends javax.swing.JPanel {
     private com.raven.swing.Border border1;
     private com.raven.swing.Border border2;
     private com.raven.swing.BorderB borderB1;
+    private com.raven.swing.ButtonAdd buttonAdd1;
+    private com.raven.swing.ButtonClean buttonClean1;
     private com.raven.component.Cliente cliente1;
     private com.raven.component.DEvento dEvento1;
     private com.raven.component.DescEvento descEvento1;

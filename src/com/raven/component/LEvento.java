@@ -10,6 +10,12 @@ public class LEvento extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
     }
+    
+        public void clear() {
+        if (levento1 != null) {
+            levento1.setText(""); // Limpa o texto do componente
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

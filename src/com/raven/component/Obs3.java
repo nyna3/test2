@@ -10,6 +10,12 @@ public class Obs3 extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
     }
+    
+    public void clear() {
+        if (obs31 != null) {
+            obs31.setText(""); // Limpa o texto do componente
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

@@ -10,6 +10,12 @@ public class DEvento extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
     }
+    
+    public void clear() {
+        if (devento1 != null) {
+            devento1.setText(""); // Limpa o texto do componente
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

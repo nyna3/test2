@@ -264,6 +264,13 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Component id="buttonClean1" min="-2" pref="217" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="buttonAdd1" min="-2" pref="215" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -311,7 +318,12 @@
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                           <Component id="descEvento1" min="-2" pref="127" max="-2" attributes="0"/>
-                          <EmptySpace pref="147" max="32767" attributes="0"/>
+                          <EmptySpace pref="53" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="buttonAdd1" pref="69" max="32767" attributes="0"/>
+                              <Component id="buttonClean1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -457,6 +469,22 @@
                   </Properties>
                 </Component>
                 <Component class="com.raven.component.Obs3" name="obs31">
+                </Component>
+                <Component class="com.raven.swing.ButtonClean" name="buttonClean1">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Limpar"/>
+                  </Properties>
+                </Component>
+                <Component class="com.raven.swing.ButtonAdd" name="buttonAdd1">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Adicionar or&#xe7;amento"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>

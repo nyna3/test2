@@ -10,6 +10,12 @@ public class Obs1 extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
     }
+    
+        public void clear() {
+        if (obs11 != null) {
+            obs11.setText(""); // Limpa o texto do componente
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

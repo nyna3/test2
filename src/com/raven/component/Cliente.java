@@ -10,6 +10,12 @@ public class Cliente extends javax.swing.JPanel {
         initComponents();
         setOpaque(false);
     }
+    
+    public void clear() {
+        if (searchText1 != null) {
+            searchText1.setText(""); // Limpa o texto do componente
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
